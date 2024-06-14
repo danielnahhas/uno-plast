@@ -17,7 +17,7 @@ const VariationsTable = ({ variations, activeIndex, setActiveIndex, disableAutoS
             </thead>
             <tbody>
                 {variations.map((variation, i) => (
-                    <tr onClick={() => {
+                    <tr key={i} onClick={() => {
                         setActiveIndex(i)
                         !disableAutoScroll && setDisableAutoScroll(true)
                     }} className={`cursor-pointer border-b hover:bg-slate-100 ${activeIndex === i ? 'bg-slate-100' : 'bg-white'}`}>

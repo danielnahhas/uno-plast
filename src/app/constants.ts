@@ -228,7 +228,7 @@ export const bestSellers: Tank[] = [
     category: "vertical",
     capacity: 3000,
     diameter: 160,
-    height: 175,
+    height: 185,
     width: null,
     length: null,
   },

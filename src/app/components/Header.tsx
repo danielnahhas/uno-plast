@@ -21,7 +21,7 @@ const Header = () => {
     
     useEffect(() => {
         const handleScroll = () => {
-          if (window.scrollY > 250) {
+          if (window.scrollY > 0) {
             setTimeout(() => {
               setIsScrolling(true)
             }, 500)

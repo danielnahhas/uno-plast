@@ -13,7 +13,7 @@ const BestSellerProduct = ({ product }: { product: Tank }) => {
         <div className='flex items-center w-full p-4 border-t'>
             <span className='border-r w-full text-center flex items-center'><FaGlassWater className='text-sm'/>: {product.capacity}L</span>
             <span className='border-r w-full text-center'><span className='font-bold'>H: </span>{product.height}CM</span>
-            <span className='w-full text-end'><span className='font-bold'>W: </span>{product.diameter}CM</span>
+            <span className='w-full text-end'><span className='font-bold'>D: </span>{product.diameter}CM</span>
         </div>
         <div className='w-full'>
             <button className='bg-primaryBlue hover:bg-darkerBlue text-white transition-colors w-full py-3 rounded-br-lg rounded-bl-lg'>View More</button>
