@@ -18,7 +18,7 @@ const Distributors = () => {
             <h2 className='text-4xl font-extrabold'>Find a Distributor</h2>
             <select onChange={(e) => setActiveCity(e.target.value === 'Choose a City' ? null : e.target.value.toLowerCase())} id="Manufacturer" className="text-sm rounded-full block p-2.5 border-r-[10px] border-white bg-white outline outline-1 outline-gray-300">
               <option selected={activeCity === null}>Choose a City</option>
-              {distributors.map((distributor, i) => <option key={i} selected={distributor.city.toLowerCase() === activeCity} key={distributor.city} className='capitalize'>{distributor.city}</option>)}
+              {distributors.map((distributor, i) => <option selected={distributor.city.toLowerCase() === activeCity} key={distributor.city} className='capitalize'>{distributor.city}</option>)}
             </select>
             {activeCity ? (
               <button onClick={() => setActiveCity(null)} className='bg-red-600 text-white rounded-full p-2.5 text-sm'>Reset Filters</button>
