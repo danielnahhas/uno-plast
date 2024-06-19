@@ -33,7 +33,7 @@ const Product = ({ product }: { product: ProductType }) => {
         {product.images.length > 1 ?
         <Carousel product={product} images={product.images} activeIndex={activeIndex} setActiveIndex={setActiveIndex} disableAutoScroll={disableAutoScroll} setDisableAutoScroll={setDisableAutoScroll}/>
         :
-        <Image src={product.images[0]} height={300} width={300} alt='category image' className='w-full sm:w-80 2xl:w-96 mx-auto sm:mx-0 rounded-lg bg-slate-50'/>
+        <Image src={product.images[0]} height={300} width={300} alt='category image' className='w-full sm:w-64 lg:w-80 2xl:w-96 mx-auto sm:mx-0 rounded-lg bg-slate-50'/>
         }
         <div className='space-y-2 w-full flex-1 max-w-[1000px] mt-4 md:mt-0'>
           {product.capacity && 
